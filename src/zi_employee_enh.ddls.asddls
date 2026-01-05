@@ -1,4 +1,3 @@
-##Step 1: CDS view for Parent
 
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'CDS view for Parent Table'
