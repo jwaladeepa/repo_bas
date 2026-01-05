@@ -1,23 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
-<abapGit>
-  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
-    <asx:values>
-      <DDLSRC>
-        <DDLSNAME>ZI_EMPLOYEE_ENH</DDLSNAME>
-        <DDLSDATA>
-          @AccessControl.authorizationCheck: #NOT_REQUIRED
-          @EndUserText.label: 'CDS view for Parent Table'
-          define root view entity ZI_EMPLOYEE_ENH as select from zemployee_enh
-              composition [0..*] of ZI_EMPSTATUS_ENH as _EmpStatus
-          {
-              key emp_id as EmpId,
-              emp_status as EmpStatus,
-              emp_name as EmpName,
-              dept as Department,
-              _EmpStatus
-          }
-        </DDLSDATA>
-      </DDLSRC>
-    </asx:values>
-  </asx:abap>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DDLS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DDLS>
+    <DDLNAME>ZI_EMPLOYEE_ENH</DDLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DDTEXT>ZI_EMPLOYEE_ENH</DDTEXT>
+    <SOURCE_TYPE>W</SOURCE_TYPE>
+   </DDLS>
+  </asx:values>
+ </asx:abap>
 </abapGit>
